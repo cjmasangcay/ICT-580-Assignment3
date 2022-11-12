@@ -1,0 +1,39 @@
+.index {
+    font-family: Lato;
+}
+.contact {
+    font-family: Lato;
+}
+.left {
+	background-color:rgba(0,0,0,.025);
+	border-right:1px solid rgba(0,0,0,.05);
+	float:right;
+	height:100%;
+	margin-left:-1px;
+	min-width:256px;
+	position:fixed;
+	width:30%;
+}
+.right {
+	float:right;
+	height:100%;
+	position:relative;
+	width:70%;
+}
+.inner {
+	margin:0 auto;
+	max-width:975px;
+	padding:3em;
+}
+#license {
+    margin-top: -20px;
+}
+img {
+    border-radius: 50%;
+    max-width: 30%;
+    height: auto;
+    margin-top: 10px;
+}
+.about {
+    text-align: center;
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head lang="en">
+<html lang="en">
+  <head>
     <meta charset="utf-8" />
     <title>HTML CV&frasl;Resume</title>
     <link rel="icon" type="image/x-icon" href="src/assets/css/img/favicon-16x16.png" />
@@ -9,43 +9,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="follow, noindex">
     <link rel="stylesheet" type="text/css" href="src/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
     <link rel="preload" as="image" href="src/assets/css/img/cjm.jpg">
   </head>  
-  <body>
-    <header>
-      <!--Used nav for the navigation links-->
-      <nav>
-        <a href="src/contact.html" target="_self">Contact</a>
-         | 
-        <a href="index.html">Resume/CV</a>
-      </nav>
-      <h1>HTML CV/Resume</h1>
-    </header>
-    <!--ID Photo-->
-    <section class="photo">
-    <img src="src/assets/css/img/cjm.jpg" style="width: 10%" alt="ID photo of Chiara Joy Masangcay">
-    </section>
-    <!--Used div container to hold all my personal information-->
-    <main class="personal">
-      <h2>Chiara Joy Masangcay</h2>
-      <!--Used em tag to emphasize my certification/license as an accountant-->
-      <em>Certified Public Accountant</em>
-      <!--Used h3 tag for the important parts of the resume-->
-      <h3>Personal Information</h3>
-      <p><strong>Address:</strong> Calgary<br>
+  <body class="index">
+        <div class="left">
+            <header>
+              <!--Used nav for the navigation links-->
+              <nav>
+                <a href="src/contact.html" target="_self">Contact</a>
+                 | 
+                <a href="index.html">Resume/CV</a>
+              </nav>
+            </header>
+            <section class="about">
+            <!--ID Photo-->
+           <p id="photo">
+            <img src="src/assets/css/img/cjm.jpg" alt="ID photo of Chiara Joy Masangcay">
+           </p>
+         <!--Personal Information Section-->
+         <main id="personal">
+          <h2>Chiara Joy Masangcay</h2>
+         <!--Used em tag to emphasize my certification/license as an accountant-->
+          <p id="license"><em>Certified Public Accountant</em></p>
+          </section>
+          <p><strong>Address:</strong> Calgary<br>
           <strong>Email: </strong>
-          <a href="mailto: cjmasangcay@gmail.com">cjmasangcay&#64;gmail.com</a>
-        </p>
-      </main>
-  <!--Used div container to hold all my Skills-->
-  <div>
-    <h3>Skills</h3>
-    <ul> <li> Accounting (IFRS and IAS) </li>
-      <li> Auditing (ISA)</li>
-      <li> EY Audit Technology (Canvas, Helix and Atlas) </li>
-      <li> Microsoft Office tools </li>
-      <li> Adobe Photoshop </li> </ul>
-  </div>
+          <a href="mailto: cjmasangcay@gmail.com">cjmasangcay&#64;gmail.com</a></p>
+         <!--Skills Section-->
+          <article id="Skills">
+           <h3>Skills</h3>
+            <ul> <li> Accounting (IFRS and IAS) </li>
+                 <li> Auditing (ISA)</li>
+                 <li> EY Audit Technology (Canvas, Helix and Atlas) </li>
+                 <li> Microsoft Office tools </li>
+                 <li> Adobe Photoshop </li> </ul>
+            </article>
+        </main>
+      </div>
+  <div class="right">
+    <div class="inner">
   <!--Used article tag to group my Professional Experience as one article-->
   <article id="professional">
     <h3>Experience</h3>
@@ -87,5 +91,7 @@
     <em>International Professional Program</em>
   </p></section>
 </article>
+</div>
+</div>
     </body>
 </html>
