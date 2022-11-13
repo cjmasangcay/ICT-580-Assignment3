@@ -1,12 +1,15 @@
+/*Used Lato as font style*/
 .index {
     font-family: Lato;
 }
 .contact {
     font-family: Lato;
+    background-color: #807f8029;
 }
+/*CSS for Personal Info Summary*/
 .left {
-	background-color:rgba(0,0,0,.025);
-	border-right:1px solid rgba(0,0,0,.05);
+	background-color: #807f80;
+	border-right:5px solid rgba(0,0,0,.05);
 	float:right;
 	height:100%;
 	margin-left:-1px;
@@ -14,26 +17,92 @@
 	position:fixed;
 	width:30%;
 }
+/*CSS for Professional Experience and Education*/
 .right {
-	float:right;
+	background-color: #807f8029;
+    float:right;
 	height:100%;
 	position:relative;
 	width:70%;
 }
+/*CSS for border of professional experience*/
 .inner {
 	margin:0 auto;
 	max-width:975px;
 	padding:3em;
 }
+/*To remove space before license id*/
 #license {
     margin-top: -20px;
 }
+/*CSS for img*/
 img {
     border-radius: 50%;
     max-width: 30%;
     height: auto;
     margin-top: 10px;
 }
+/*CSS for text color*/
 .about {
     text-align: center;
+    color: #ffda66;
+}
+h3 {
+    color: #ffda66;
+}
+/*CSS to fix margin*/
+.info {
+    margin-left: 10px;
+    font-size: 90%;
+}
+nav {
+    margin-left: 2px;
+    margin-top: 2px;
+}
+/*CSS for Info and Skills*/
+.info p {
+    color: whitesmoke;
+}
+#skills {
+    color: whitesmoke;
+    margin-left: -20px;
+}
+/*CSS for Contact me button*/
+button {
+    background: #ffda66;
+    padding: 15px;
+    width: 400px;
+    color: #807f80;
+    font-size: 16px;
+    border-radius: 2px;
+    border: none;
+}
+/*CSS for Job dates and positions held*/
+#jobdate-1 {
+    color:rgba(0, 0, 0, 0.5);
+    margin-top: -15px;
+}
+#jobdate-2 {
+    color:rgba(0, 0, 0, 0.5);
+    margin-top: -15px;
+}
+#jobdate-3 {
+    color:rgba(0, 0, 0, 0.5);
+    margin-top: -15px;
+}
+/*Responsive design*/
+@media only screen and (max-width: 600px) {
+    /*For phones*/
+    .left {
+        position: relative;
+        width: 100%;
+        border-right: 0px;
+    }
+    .right {
+        width: 100%;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr,1fr;
+    }
 }
